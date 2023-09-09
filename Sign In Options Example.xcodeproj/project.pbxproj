@@ -13,7 +13,7 @@
 		F438AAB72AAB9EFA0045C331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F438AAB62AAB9EFA0045C331 /* Preview Assets.xcassets */; };
 		F438AAC12AABC29E0045C331 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F438AAC02AABC29E0045C331 /* FirebaseAuth */; };
 		F438AAC32AABC29E0045C331 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F438AAC22AABC29E0045C331 /* FirebaseFirestore */; };
-		F438AAC52AABC6E20045C331 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F438AAC42AABC6E00045C331 /* GoogleService-Info.plist */; };
+		F438AAC92AABE4530045C331 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F438AAC82AABE4530045C331 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		F438AAB12AAB9EF20045C331 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F438AAB32AAB9EFA0045C331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F438AAB62AAB9EFA0045C331 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F438AAC42AABC6E00045C331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F438AAC82AABE4530045C331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 				F438AAAF2AAB9EF20045C331 /* Sign_In_Options_ExampleApp.swift */,
 				F438AAB12AAB9EF20045C331 /* ContentView.swift */,
 				F438AAB32AAB9EFA0045C331 /* Assets.xcassets */,
-				F438AAC42AABC6E00045C331 /* GoogleService-Info.plist */,
+				F438AAC82AABE4530045C331 /* GoogleService-Info.plist */,
 				F438AAB52AAB9EFA0045C331 /* Preview Content */,
 			);
 			path = "Sign In Options Example";
@@ -141,7 +141,7 @@
 			files = (
 				F438AAB72AAB9EFA0045C331 /* Preview Assets.xcassets in Resources */,
 				F438AAB42AAB9EFA0045C331 /* Assets.xcassets in Resources */,
-				F438AAC52AABC6E20045C331 /* GoogleService-Info.plist in Resources */,
+				F438AAC92AABE4530045C331 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
