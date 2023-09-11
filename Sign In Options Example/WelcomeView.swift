@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  WelcomeView.swift
 //  Sign In Options Example
 //
 //  Created by Michael Hsieh on 9/8/23.
