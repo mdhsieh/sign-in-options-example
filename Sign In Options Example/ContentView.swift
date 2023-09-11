@@ -27,6 +27,8 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 300)
                 
+                Text("OR")
+                
                 
                 TextField("Email", text: $email)
                     .textFieldStyle(.roundedBorder)
@@ -38,6 +40,14 @@ struct ContentView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .controlSize(.large)
+                
+                HStack {
+                    Text("Already have an account? ")
+                    
+                    NavigationLink(destination: EmptyView()) {
+                        Text("Login").foregroundColor(.blue)
+                    }
+                }.frame(maxWidth: .infinity, alignment: .center)
             }
             .padding()
         }
