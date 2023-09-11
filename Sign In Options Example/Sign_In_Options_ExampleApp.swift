@@ -23,7 +23,7 @@ struct Sign_In_Options_ExampleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }
