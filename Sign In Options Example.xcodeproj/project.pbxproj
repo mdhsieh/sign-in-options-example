@@ -18,6 +18,7 @@
 		F443A5C32AAFA2A000590C82 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C22AAFA2A000590C82 /* AuthService.swift */; };
 		F443A5C62AAFA51000590C82 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F443A5C52AAFA51000590C82 /* GoogleSignIn */; };
 		F443A5C92AAFE51500590C82 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C82AAFE51400590C82 /* StartView.swift */; };
+		F443A5CB2AB1027800590C82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5CA2AB1027800590C82 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F443A5C22AAFA2A000590C82 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F443A5C72AAFBCEC00590C82 /* Sign-In-Options-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sign-In-Options-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F443A5C82AAFE51400590C82 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		F443A5CA2AB1027800590C82 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +71,13 @@
 				F443A5C72AAFBCEC00590C82 /* Sign-In-Options-Example-Info.plist */,
 				F438AAAF2AAB9EF20045C331 /* Sign_In_Options_ExampleApp.swift */,
 				F443A5C22AAFA2A000590C82 /* AuthService.swift */,
+				F443A5C82AAFE51400590C82 /* StartView.swift */,
 				F438AAB12AAB9EF20045C331 /* WelcomeView.swift */,
 				F443A5C02AAFA0EC00590C82 /* HomeView.swift */,
+				F443A5CA2AB1027800590C82 /* LoginView.swift */,
 				F438AAB32AAB9EFA0045C331 /* Assets.xcassets */,
 				F438AAC82AABE4530045C331 /* GoogleService-Info.plist */,
 				F438AAB52AAB9EFA0045C331 /* Preview Content */,
-				F443A5C82AAFE51400590C82 /* StartView.swift */,
 			);
 			path = "Sign In Options Example";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F443A5CB2AB1027800590C82 /* LoginView.swift in Sources */,
 				F443A5C12AAFA0EC00590C82 /* HomeView.swift in Sources */,
 				F443A5C92AAFE51500590C82 /* StartView.swift in Sources */,
 				F438AAB22AAB9EF20045C331 /* WelcomeView.swift in Sources */,

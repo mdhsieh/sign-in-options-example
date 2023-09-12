@@ -69,9 +69,39 @@ class AuthService: ObservableObject {
             }
         }
     }
-
     
-    // Regular email and password sign out.
+    // Sign out if used Single-sign-on with Google
+    func googleSignOut() {
+        GIDSignIn.sharedInstance.signOut()
+        print("Google sign out")
+    }
+    
+    // MARK: - Password Account
+    func regularCreateAccount(email: String, password: String) {
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let e = error {
+                print(e.localizedDescription)
+                
+            } else {
+                print("Successfully created password account")
+            }
+        }
+    }
+    
+    //MARK: - Traditional sign in
+    // Traditional sign in with password and email
+    func regularSignIn(email:String, password:String, completion: @escaping (Error?) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password) {  authResult, error in
+            if let e = error {
+                completion(e)
+            } else {
+                print("Login success")
+                completion(nil)
+            }
+        }
+    }
+    
+    // Regular password acount sign out.
     // Closure has whether sign out was successful or not
     func regularSignOut(completion: @escaping (Error?) -> Void) {
         let firebaseAuth = Auth.auth()
@@ -82,11 +112,5 @@ class AuthService: ObservableObject {
           print("Error signing out: %@", signOutError)
           completion(signOutError)
         }
-    }
-    
-    // Sign out if used Single-sign-on with Google
-    func googleSignOut() {
-        GIDSignIn.sharedInstance.signOut()
-        print("Google sign out")
     }
 }
