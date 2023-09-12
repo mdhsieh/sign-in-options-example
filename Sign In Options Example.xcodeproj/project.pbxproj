@@ -17,6 +17,7 @@
 		F443A5C12AAFA0EC00590C82 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C02AAFA0EC00590C82 /* HomeView.swift */; };
 		F443A5C32AAFA2A000590C82 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C22AAFA2A000590C82 /* AuthService.swift */; };
 		F443A5C62AAFA51000590C82 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F443A5C52AAFA51000590C82 /* GoogleSignIn */; };
+		F443A5C92AAFE51500590C82 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C82AAFE51400590C82 /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		F438AAC82AABE4530045C331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F443A5C02AAFA0EC00590C82 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F443A5C22AAFA2A000590C82 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F443A5C72AAFBCEC00590C82 /* Sign-In-Options-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sign-In-Options-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F443A5C82AAFE51400590C82 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		F438AAAE2AAB9EF20045C331 /* Sign In Options Example */ = {
 			isa = PBXGroup;
 			children = (
+				F443A5C72AAFBCEC00590C82 /* Sign-In-Options-Example-Info.plist */,
 				F438AAAF2AAB9EF20045C331 /* Sign_In_Options_ExampleApp.swift */,
 				F443A5C22AAFA2A000590C82 /* AuthService.swift */,
 				F438AAB12AAB9EF20045C331 /* WelcomeView.swift */,
@@ -70,6 +74,7 @@
 				F438AAB32AAB9EFA0045C331 /* Assets.xcassets */,
 				F438AAC82AABE4530045C331 /* GoogleService-Info.plist */,
 				F438AAB52AAB9EFA0045C331 /* Preview Content */,
+				F443A5C82AAFE51400590C82 /* StartView.swift */,
 			);
 			path = "Sign In Options Example";
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F443A5C12AAFA0EC00590C82 /* HomeView.swift in Sources */,
+				F443A5C92AAFE51500590C82 /* StartView.swift in Sources */,
 				F438AAB22AAB9EF20045C331 /* WelcomeView.swift in Sources */,
 				F438AAB02AAB9EF20045C331 /* Sign_In_Options_ExampleApp.swift in Sources */,
 				F443A5C32AAFA2A000590C82 /* AuthService.swift in Sources */,
@@ -297,6 +303,7 @@
 				DEVELOPMENT_TEAM = 3Z26732YPL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sign-In-Options-Example-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,6 +333,7 @@
 				DEVELOPMENT_TEAM = 3Z26732YPL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sign-In-Options-Example-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
