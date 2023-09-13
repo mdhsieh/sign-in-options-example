@@ -33,6 +33,7 @@ struct WelcomeView: View {
                     
                     Button {
                         print("Tapped apple sign in")
+                        authService.startSignInWithAppleFlow()
                     } label: {
                         Image("AppleButton")
                             .resizable()

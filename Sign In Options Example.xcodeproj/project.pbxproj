@@ -33,6 +33,7 @@
 		F443A5C72AAFBCEC00590C82 /* Sign-In-Options-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sign-In-Options-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F443A5C82AAFE51400590C82 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F443A5CA2AB1027800590C82 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F443A5CC2AB1526E00590C82 /* Sign In Options Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sign In Options Example.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 		F438AAAE2AAB9EF20045C331 /* Sign In Options Example */ = {
 			isa = PBXGroup;
 			children = (
+				F443A5CC2AB1526E00590C82 /* Sign In Options Example.entitlements */,
 				F443A5C72AAFBCEC00590C82 /* Sign-In-Options-Example-Info.plist */,
 				F438AAAF2AAB9EF20045C331 /* Sign_In_Options_ExampleApp.swift */,
 				F443A5C22AAFA2A000590C82 /* AuthService.swift */,
@@ -301,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sign In Options Example/Sign In Options Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sign In Options Example/Preview Content\"";
@@ -331,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sign In Options Example/Sign In Options Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sign In Options Example/Preview Content\"";
