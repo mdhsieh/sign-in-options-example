@@ -13,12 +13,12 @@
 		F438AAB72AAB9EFA0045C331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F438AAB62AAB9EFA0045C331 /* Preview Assets.xcassets */; };
 		F438AAC12AABC29E0045C331 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F438AAC02AABC29E0045C331 /* FirebaseAuth */; };
 		F438AAC32AABC29E0045C331 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F438AAC22AABC29E0045C331 /* FirebaseFirestore */; };
-		F438AAC92AABE4530045C331 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F438AAC82AABE4530045C331 /* GoogleService-Info.plist */; };
 		F443A5C12AAFA0EC00590C82 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C02AAFA0EC00590C82 /* HomeView.swift */; };
 		F443A5C32AAFA2A000590C82 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C22AAFA2A000590C82 /* AuthService.swift */; };
 		F443A5C62AAFA51000590C82 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = F443A5C52AAFA51000590C82 /* GoogleSignIn */; };
 		F443A5C92AAFE51500590C82 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5C82AAFE51400590C82 /* StartView.swift */; };
 		F443A5CB2AB1027800590C82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F443A5CA2AB1027800590C82 /* LoginView.swift */; };
+		F47757B52AB3D23E00F2A339 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F47757B42AB3D23E00F2A339 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +27,13 @@
 		F438AAB12AAB9EF20045C331 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F438AAB32AAB9EFA0045C331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F438AAB62AAB9EFA0045C331 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F438AAC82AABE4530045C331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F443A5C02AAFA0EC00590C82 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F443A5C22AAFA2A000590C82 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F443A5C72AAFBCEC00590C82 /* Sign-In-Options-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sign-In-Options-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F443A5C82AAFE51400590C82 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F443A5CA2AB1027800590C82 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F443A5CC2AB1526E00590C82 /* Sign In Options Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sign In Options Example.entitlements"; sourceTree = "<group>"; };
+		F47757B42AB3D23E00F2A339 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				F443A5C02AAFA0EC00590C82 /* HomeView.swift */,
 				F443A5CA2AB1027800590C82 /* LoginView.swift */,
 				F438AAB32AAB9EFA0045C331 /* Assets.xcassets */,
-				F438AAC82AABE4530045C331 /* GoogleService-Info.plist */,
+				F47757B42AB3D23E00F2A339 /* GoogleService-Info.plist */,
 				F438AAB52AAB9EFA0045C331 /* Preview Content */,
 			);
 			path = "Sign In Options Example";
@@ -161,7 +161,7 @@
 			files = (
 				F438AAB72AAB9EFA0045C331 /* Preview Assets.xcassets in Resources */,
 				F438AAB42AAB9EFA0045C331 /* Assets.xcassets in Resources */,
-				F438AAC92AABE4530045C331 /* GoogleService-Info.plist in Resources */,
+				F47757B52AB3D23E00F2A339 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

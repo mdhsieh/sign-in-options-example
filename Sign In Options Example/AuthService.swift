@@ -8,7 +8,6 @@
 import Foundation
 import FirebaseCore
 import FirebaseAuth
-import GoogleSignIn
 import CryptoKit
 import AuthenticationServices
 
@@ -30,56 +29,6 @@ class AuthService: NSObject, ObservableObject, ASAuthorizationControllerDelegate
                 print("Auth state changed, is signed out")
             }
         }
-    }
-    
-    // MARK: - Google sign in
-    // Single-sign-on with Google
-    func googleSignIn() {
-        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-
-        // Create Google Sign In configuration object.
-        let config = GIDConfiguration(clientID: clientID)
-
-        // As you’re not using view controllers to retrieve the presentingViewController, access it through
-        // the shared instance of the UIApplication
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
-        guard let rootViewController = windowScene.windows.first?.rootViewController else { return }
-
-        // Start the sign in flow!
-        GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { [unowned self] authentication, error in
-
-          if let error = error {
-              print("Error doing Google Sign-In, \(error.localizedDescription)")
-              return
-          }
-
-          guard
-            let user = authentication?.user,
-            let idToken = user.idToken?.tokenString
-          else {
-            print("Error getting user or ID token during Google Sign-In authentication")
-            return
-          }
-
-          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-                                                         accessToken: user.accessToken.tokenString)
-
-            // Authenticate with Firebase
-            Auth.auth().signIn(with: credential) { authResult, error in
-                if let e = error {
-                    print(e.localizedDescription)
-                }
-
-                // Allow proceed to next screen
-                print("Successful google sign in")
-            }
-        }
-    }
-    
-    // Sign out if used Single-sign-on with Google
-    func googleSignOut() {
-        GIDSignIn.sharedInstance.signOut()
-        print("Google sign out")
     }
     
     // MARK: - Password Account
@@ -168,7 +117,6 @@ class AuthService: NSObject, ObservableObject, ASAuthorizationControllerDelegate
     }
     
     // Single-sign-on with Apple
-    // shouldReauthenticate false if signing in, true if re-authenticating instead
     @available(iOS 13, *)
     func startSignInWithAppleFlow() {
        

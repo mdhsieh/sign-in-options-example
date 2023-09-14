@@ -22,16 +22,6 @@ struct WelcomeView: View {
                 
                 VStack {
                     Button {
-                        print("Tapped google sign in")
-                        authService.googleSignIn()
-                    } label: {
-                        Image("GoogleButton")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 300)
-                    }
-                    
-                    Button {
                         print("Tapped apple sign in")
                         authService.startSignInWithAppleFlow()
                     } label: {
