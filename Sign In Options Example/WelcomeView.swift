@@ -21,6 +21,12 @@ struct WelcomeView: View {
                     .opacity(0.5)
                 
                 VStack {
+                    Button("Google Sign In") {
+                        print("Tapped google sign in")
+                        authService.googleSignIn()
+                    }
+                    
+                    
                     Button {
                         print("Tapped apple sign in")
                         authService.startSignInWithAppleFlow()
