@@ -215,4 +215,10 @@ class AuthService: NSObject, ObservableObject, ASAuthorizationControllerDelegate
             }
         }
     }
+    
+    // Sign out if used Single-sign-on with Google
+    func googleSignOut() {
+        GIDSignIn.sharedInstance.signOut()
+        print("Google sign out")
+    }
 }

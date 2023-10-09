@@ -21,9 +21,14 @@ struct WelcomeView: View {
                     .opacity(0.5)
                 
                 VStack {
-                    Button("Google Sign In") {
+                    Button {
                         print("Tapped google sign in")
                         authService.googleSignIn()
+                    } label: {
+                        Image("GoogleButton")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 300)
                     }
                     
                     

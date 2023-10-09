@@ -24,6 +24,8 @@ struct HomeView: View {
                                     print(e.localizedDescription)
                                 }
                             }
+                            
+                            authService.googleSignOut()
                         }
                     }
                 }
