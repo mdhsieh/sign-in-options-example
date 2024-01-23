@@ -19,7 +19,7 @@ struct HomeView: View {
                         Button("Log out") {
                             print("Log out tapped!")
                             authService.regularSignOut { error in
-                                
+
                                 if let e = error {
                                     print(e.localizedDescription)
                                 }

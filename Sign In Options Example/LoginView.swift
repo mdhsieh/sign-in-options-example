@@ -11,6 +11,7 @@ struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @EnvironmentObject var authService: AuthService
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         NavigationView {
@@ -39,7 +40,9 @@ struct LoginView: View {
                     HStack {
                         Text("Don't have an account?")
                         
-                        NavigationLink(destination: WelcomeView()) {
+                        Button {
+                            dismiss()
+                        } label: {
                             Text("Create Account").foregroundColor(.blue)
                         }
                     }.frame(maxWidth: .infinity, alignment: .center)
